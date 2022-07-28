@@ -5,15 +5,15 @@
  * 변수의 타입을 미리 알지 못 할 때 사용
  */
 
-let a: unknown;
+let u: unknown;
 
 // let b = a + 1;
-if (typeof a === "number") {
-  let b = a + 1;
+if (typeof u === "number") {
+  let b = u + 1;
 }
 
-if (typeof a === "string") {
-  let b = a.toUpperCase();
+if (typeof u === "string") {
+  let b = u.toUpperCase();
 }
 
 /**
