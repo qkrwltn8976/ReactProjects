@@ -12,8 +12,22 @@ class Dict {
       this.words[word.term] = word.def;
     }
   }
-  def(term: string) {
+  get(term: string) {
     return this.words[term];
+  }
+  delete(term: string) {
+    delete this.words[term];
+  }
+  update(word: Word) {
+    if (this.words[word.term]) {
+      this.words[word.term] = word.def;
+    }
+  }
+  showAll() {
+    Object.keys(this.words).forEach((word: string) => console.log(word));
+  }
+  count() {
+    return Object.keys(this.words).length;
   }
 }
 
@@ -26,4 +40,4 @@ const kimchi = new Word("kimchi", "한국의 음식");
 const dict = new Dict();
 
 dict.add(kimchi);
-dict.def("kimchi");
+dict.get("kimchi");
