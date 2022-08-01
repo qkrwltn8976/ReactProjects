@@ -16,7 +16,7 @@ abstract class User {
 
 class Players extends User {
   getNickName(): void {
-    console.log(this.nickname); /
+    console.log(this.nickname);
   }
 }
 
