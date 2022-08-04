@@ -23,7 +23,7 @@ if (typeof u === "string") {
  * void를 지정해줄 필요없음
  */
 
-function hello() {
+function hi() {
   console.log("x");
 }
 
