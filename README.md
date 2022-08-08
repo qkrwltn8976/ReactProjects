@@ -10,8 +10,8 @@ Typescript로 블록체인 만들기
 
 https://codingapple.com/course/javascript-es6/
 
-- [this 키워드](./javascript-es6/this 키워드.md)
-
+- [this 키워드](javascript-es6/this.md)
+- [arrow function](javascript-es6/arrow-function.md)
 ### 웹 게임을 만들며 배우는 React에 Typescript 적용하기
 
 ### 최적화
