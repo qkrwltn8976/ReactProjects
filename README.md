@@ -1,10 +1,20 @@
-﻿# ReactProjects
+﻿# 📖 React Study
 
-리액트를 다루는 기술
+## INDEX
+
+### 리액트를 다루는 기술
 
 Typescript로 블록체인 만들기
 
-## 최적화
+### 매우 쉽게 이해하는 Javascript 객체지향 & ES6 신문법
+
+https://codingapple.com/course/javascript-es6/
+
+- [this 키워드](./javascript-es6/this 키워드.md)
+
+### 웹 게임을 만들며 배우는 React에 Typescript 적용하기
+
+### 최적화
 
 1. 로딩 성능 최적화
 
