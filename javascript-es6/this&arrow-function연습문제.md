@@ -14,27 +14,24 @@ var 사람 = {
 ```javascript
 var 자료 = {
   data: [1, 2, 3, 4, 5],
-  전부더하기: function () {
-    return this.data.map((item) => {
-      result += item;
-      return result;
-    });
-  },
 };
 
-let result = 0;
-자료.data.forEach((item) => {
-  result += item;
-});
+자료.전부더하기: function () {
+    var 합 = 0;
+    this.data.forEach(function(item) {
+      합 += item;
+    });
+    console.log(합)
+  }
 ```
 
 3. setTimeout 이용해보기
 
 ```javascript
-document.getElementById("버튼").addEventListener(
-  "click",
-  setTimeout(function () {
+document.getElementById("버튼").addEventListener("click", function () {
+  setTimeout(() => {
+    //근본없는 일반 함수에서 this는 window이므로 화살표 함수를 사용하여 this값을 함수 밖에 있는거 그대로 사용
     console.log(this.innerHTML);
-  }, 1000)
-);
+  }, 1000);
+});
 ```
