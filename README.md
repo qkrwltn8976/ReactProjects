@@ -12,8 +12,8 @@ https://codingapple.com/course/javascript-es6/
 
 - [this 키워드](javascript-es6/this.md)
 - [arrow function](javascript-es6/arrow-function.md)
-- [변수](avascript-es6/variable.md)
-- [hoisting](avascript-es6/hoisting.md)
+- [변수](javascript-es6/variable.md)
+- [hoisting](javascript-es6/hoisting.md)
 ### 웹 게임을 만들며 배우는 React에 Typescript 적용하기
 
 ### 최적화
