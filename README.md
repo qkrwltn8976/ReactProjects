@@ -14,6 +14,7 @@ https://codingapple.com/course/javascript-es6/
 - [arrow function](javascript-es6/arrow-function.md)
 - [변수](javascript-es6/variable.md)
 - [hoisting](javascript-es6/hoisting.md)
+- [template/tagged literal](javascript-es6/template-literal.md)
 ### 웹 게임을 만들며 배우는 React에 Typescript 적용하기
 
 ### 최적화
