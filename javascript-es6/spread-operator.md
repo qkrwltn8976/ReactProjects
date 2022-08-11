@@ -69,7 +69,7 @@ console.log(o2); // {a : 1, b : 2}
 var o3 = { ...o1, a: 2 }; // {a : 2, b : 2}
 ```
 
-4. 함수 파라미터 넣을 때
+3. 함수 파라미터 넣을 때
 
 ```javascript
 function 더하기(a, b, c) {
