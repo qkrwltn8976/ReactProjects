@@ -64,3 +64,52 @@ function 함수(a, b, c) {
 
 함수(2, 3, 4);
 ```
+
+- arguments의 단점
+  : arguments라는 자료를 쪼개서 사용해야 함
+
+### 3. Rest 파라미터
+
+- rest parameter
+  이 자리에 오는 모든 파라미터를 []에 담아줌\
+  arguments보다 유연한 사용 가능
+- arguments
+  모든 파라미터를 []에 보관해줌
+
+```javascript
+function 함수2(a, b, ...파라미터들) {
+  console.log(파라미터들);
+}
+
+함수2(1, 2, 3, 4, 5, 6, 7); // [3,4,5,6,7]
+```
+
+> ...의 용도
+
+1. spread operator
+2. rest parameter
+
+Q. 모든 파라미터들을 하나씩 콘솔창에 출력하는 함수?
+
+```javascript
+function 함수(...rest) {
+  for (var i = 0; i < rest.length; i++) {
+    console.log(rest[i]);
+  }
+}
+함수(1, 2, 3, 4);
+```
+
+- rest 파라미터 주의점
+
+1. 가장 뒤에 써야함
+2. 두번 이상 사용 불가
+
+```javascript
+function 함수(...rest, ...rest2, a) { // Syntax Error
+  for (var i = 0; i < rest.length; i++) {
+    console.log(rest[i]);
+  }
+}
+함수(1, 2, 3, 4);
+```

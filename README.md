@@ -16,7 +16,8 @@ https://codingapple.com/course/javascript-es6/
 - [hoisting](javascript-es6/hoisting.md)
 - [template/tagged literal](javascript-es6/template-literal.md)
 - [spread operator](javascript-es6/spread-operator.md)
-- [function : default parameter/argument](javascript-es6/function.md)
+- [function : default parameter/argument/rest](javascript-es6/function.md)
+- [primitive/reference data type](javascript-es6/reference-data-type.md)
 
 ### 웹 게임을 만들며 배우는 React에 Typescript 적용하기
 
