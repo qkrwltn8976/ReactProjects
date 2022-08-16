@@ -18,6 +18,8 @@ https://codingapple.com/course/javascript-es6/
 - [spread operator](javascript-es6/spread-operator.md)
 - [function : default parameter/argument/rest](javascript-es6/function.md)
 - [primitive/reference data type](javascript-es6/reference-data-type.md)
+- [constructor](javascript-es6/constructor.md)
+- [prototype](javascript-es6/prototype.md)
 
 ### 웹 게임을 만들며 배우는 React에 Typescript 적용하기
 
