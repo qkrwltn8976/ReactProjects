@@ -20,6 +20,7 @@ https://codingapple.com/course/javascript-es6/
 - [primitive/reference data type](javascript-es6/reference-data-type.md)
 - [constructor](javascript-es6/constructor.md)
 - [prototype](javascript-es6/prototype.md)
+- [상속](javascript-es6/상속.md)
 
 ### 웹 게임을 만들며 배우는 React에 Typescript 적용하기
 
