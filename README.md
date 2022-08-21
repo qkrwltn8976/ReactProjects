@@ -26,6 +26,7 @@ https://codingapple.com/course/javascript-es6/
 - [브라우저 동작원리](javascript-es6/브라우저동작원리.md)
 - [동기/비동기](javascript-es6/동기&비동기.md)
 - [Promise](javascript-es6/Promise.md)
+- [async/await](javascript-es6/async&await.md)
 
 ### 웹 게임을 만들며 배우는 React에 Typescript 적용하기
 
