@@ -28,6 +28,7 @@ async function 더하기() {
 
 - async function 안에서 쓰는 await는 then 대신 사용 가능
 - 프로미스가 해결될 때까지 기다림
+- 순차적으로 많은 걸 실행할 때 유용
 
 ```javascript
 async function 더하기() {
