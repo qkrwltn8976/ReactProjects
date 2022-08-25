@@ -8,6 +8,7 @@ Typescript로 블록체인 만들기
 
 ### 프론트엔드
 
+- [브라우저 렌더링 과정](frontend/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EB%A0%8C%EB%8D%94%EB%A7%81%EA%B3%BC%EC%A0%95.md)
 - [이벤트 루프](frontend/%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%A3%A8%ED%94%84.md)
 
 ### 매우 쉽게 이해하는 Javascript 객체지향 & ES6 신문법
