@@ -12,6 +12,7 @@ Typescript로 블록체인 만들기
 - [이벤트 루프](frontend/%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%A3%A8%ED%94%84.md)
 - [CORS](frontend/cors.md)
 - [클로저](frontend/클로저.md)
+- [CSR&SSR](frontend/SSR%26CSR.md)
 
 ### 매우 쉽게 이해하는 Javascript 객체지향 & ES6 신문법
 
