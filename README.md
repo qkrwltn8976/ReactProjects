@@ -43,7 +43,7 @@ https://codingapple.com/course/javascript-es6/
 - [?, ?? 연산자](javascript-es6/%3F%EC%97%B0%EC%82%B0%EC%9E%90.md)
 
 ### React 공식문서로 디테일잡기
-- [React 공식문서로 디테일잡기](react-docs/readme.md)
+- [React 공식문서로 디테일잡기](react-docs/README.md)
 
 ### 웹 게임을 만들며 배우는 React에 Typescript 적용하기
 
