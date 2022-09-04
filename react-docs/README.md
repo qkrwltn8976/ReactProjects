@@ -1,8 +1,24 @@
-## JSX
+## React 공식문서로 디테일잡기
+
+### 공식문서를 보는 이유와 방법
+
+- 공식문서
+  - 라이브러리 설명서
+- 공식문서 읽기
+  - 리액트로 시작 후 반복 숙달
+
+### 환경 설정
+
+- vscode
+  - IDE
+- node, npm, npx
+  - create-react-app
+
+### JSX
 
 JSX는 React.createElement의 간편 표현식
 
-## Props
+### Props
 
 - props는 컴포넌트에 전달되는 단일 객체
 - 순수함수처럼 동작
@@ -12,7 +28,7 @@ JSX는 React.createElement의 간편 표현식
 - 컴포넌트 추출
   - 여러 곳에서 사용되거나/복잡한 경우 추출
 
-## State
+### State
 
 - 컴포넌트 내의 상태
   - 자신의 출력값을 변경
@@ -24,7 +40,7 @@ JSX는 React.createElement의 간편 표현식
   - 직접 수정 불가
   - 비동기적일 수 있음
 
-## Life Cycle
+### Life Cycle
 
 - constructor
   - state 초기화 및 메서드 바인딩
@@ -35,7 +51,7 @@ JSX는 React.createElement의 간편 표현식
 - Functional Component
   - hook으로 대부분 구현 가능
 
-## 이벤트
+### 이벤트
 
 - 합성 이벤트
   - 인터페이스는 같지만 직접 대응되지 않음
@@ -43,3 +59,36 @@ JSX는 React.createElement의 간편 표현식
   - Capture > target > Bubble
 - return false
   - e.preventDefault() 해줘야 함
+
+### 조건부 렌더링
+
+- if
+  - if(condition){return A} else {return B}
+- &&
+  - condition && A, falsy 주의
+- 삼항연산자
+  - condition ? A : B
+- 아예 안 그리고 싶은 경우
+  - return null;
+
+### List
+
+- map
+  - 배열의 개별 요소를 순회
+- default key
+  - 안주면 react는 index를 씀(warning)
+- 고유성
+  - 형제 사이에서만 고유하면 됨
+- key props
+  - key는 props로 넘어가지 않음
+
+### Form
+
+- Controlled Component
+  - input의 value를 state로 관리
+- 다중 입력
+  - event.target.name
+- Uncontrolled Component
+  - form element 자체의 내부 상태 활용
+- defaultValue, ref
+  - 기본값 / value 확인

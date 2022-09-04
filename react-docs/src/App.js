@@ -1,6 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Event from "./components/2-7.Event/Event";
+import ControlledComponent from "./components/2-10.Form/ControlledComponent";
+import UncontrolledComponent from "./components/2-10.Form/UncontrolledComponent";
+// import Event from "./components/2-7.Event/Event";
+// import Condition from "./components/2-8.ConditionalRendering/Condition";
+// import List from "./components/2-9.List/List";
 // import ClassComponent2 from "./components/2-6.LifeCycle/ClassComponent";
 // import Composition from "./components/2-4.Props/Composition";
 // import Extraction from "./components/2-4.Props/Extraction/Extraction";
@@ -10,7 +14,11 @@ import Event from "./components/2-7.Event/Event";
 function App() {
   return (
     <div className="App">
-      <Event />
+      <ControlledComponent />
+      <UncontrolledComponent />
+      {/* <List /> */}
+      {/* <Condition /> */}
+      {/* <Event /> */}
       {/* <ClassComponent2 />
       <FunctionalComponent />
       <ClassComponent />
