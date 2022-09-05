@@ -40,7 +40,7 @@ https://codingapple.com/course/javascript-es6/
 - [Symbol](javascript-es6/symbol.md)
 - [Map/Set](javascript-es6/Map&Set.md)
 - [Web Component](javascript-es6/web-component.md)
-- [?, ?? 연산자](javascript-es6/%3F%EC%97%B0%EC%82%B0%EC%9E%90.md)
+- [?, ?? 연산자](javascript-es6/tenary연산자.md)
 
 ### React 공식문서로 디테일잡기
 
@@ -49,7 +49,7 @@ https://codingapple.com/course/javascript-es6/
 #### React 공식문서로 디테일잡기 - 고급
 
 - [Hook](react-docs/docs/Hook.md)
-- [React 공식문서로 디테일잡기](react-docs/README.md)
+
 
 ### 웹 게임을 만들며 배우는 React에 Typescript 적용하기
 
