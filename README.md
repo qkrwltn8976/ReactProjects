@@ -49,6 +49,7 @@ https://codingapple.com/course/javascript-es6/
 #### React 공식문서로 디테일잡기 - 고급
 
 - [Hook](react-docs/docs/Hook.md)
+- [React 공식문서로 디테일잡기](react-docs/README.md)
 
 ### 웹 게임을 만들며 배우는 React에 Typescript 적용하기
 
