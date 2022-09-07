@@ -51,6 +51,9 @@ https://codingapple.com/course/javascript-es6/
 - [Hook](react-docs/docs/Hook.md)
 - [Composition 합성](react-docs/docs/Composition.md)
 - [HOC](react-docs/docs/HOC.md)
+- [Memoization](react-docs/docs/Memoization.md)
+- [Context](react-docs/docs/Context.md)
+- [Portal](react-docs/docs/Portal.md)
 
 ### 웹 게임을 만들며 배우는 React에 Typescript 적용하기
 
