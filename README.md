@@ -54,6 +54,8 @@ https://codingapple.com/course/javascript-es6/
 - [Memoization](react-docs/docs/Memoization.md)
 - [Context](react-docs/docs/Context.md)
 - [Portal](react-docs/docs/Portal.md)
+- [PropTypes](react-docs/docs/PropsTypes.md)
+- [Reconciliation](react-docs/docs/Reconciliation.md)
 
 ### 웹 게임을 만들며 배우는 React에 Typescript 적용하기
 
