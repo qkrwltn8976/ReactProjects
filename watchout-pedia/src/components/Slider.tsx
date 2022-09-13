@@ -21,8 +21,9 @@ const StyledSlider = styled(ReactSlider)`
 `
 const ArrowButton = styled.button<{ pos?: 'left' | 'right' }>`
   padding: 16px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  border: 1px;
   z-index: 1;
   top: 50%;
   background-color: #fff;
@@ -44,10 +45,9 @@ const ArrowButton = styled.button<{ pos?: 'left' | 'right' }>`
 `;
 
 const DEFAULT_SETTINGS: Settings = {
-  className: "center",
   dots: false,
   arrows: true,
-  infinite: true,
+  infinite: false,
   speed: 500,
   slidesToShow: 5,
   slidesToScroll: 5,

@@ -21,7 +21,7 @@ const LatestMovieSection: React.FC = () => {
     return (
         <Base>
             <Title>최근 개봉작</Title>
-            {isLoading ?
+            {isLoading || !data ?
                 <div>Loading...</div> :
                 (
                     <Card
