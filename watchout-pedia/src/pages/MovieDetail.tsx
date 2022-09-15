@@ -9,6 +9,9 @@ import { FaPen } from 'react-icons/fa'
 import { FiMoreHorizontal } from 'react-icons/fi'
 import useMovieDetail from '../features/movie/useMovieDetail'
 
+import Similar from '../features/movie/detail/Similar'
+import DefaultInfo from '../features/movie/detail/DefaultInfo'
+
 const Base = styled.div`
   position: relative;
   background: #f8f8f8;
@@ -281,8 +284,14 @@ const MovieDetail: React.FC = () => {
 
             <BottomInfo>
                 <ContentSectionContainer>
-                    {/* <DefaultInfo />
-                    <Similar /> */}
+                    <DefaultInfo
+                        title={data?.data.title || ""}
+                        year={year}
+                        genres={genres || ""}
+                        runtime={data?.data.runtime || 0}
+                        overview={data?.data.overview || ""}
+                    />
+                    <Similar id={id || ""} />
                 </ContentSectionContainer>
             </BottomInfo>
             <Footer />
