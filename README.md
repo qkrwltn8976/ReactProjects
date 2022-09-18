@@ -61,6 +61,7 @@ https://codingapple.com/course/javascript-es6/
 
 - [Date Library](date/README.md)
 - [Styling Library](styling/README.md)
+- [Fetching Library](fetch/README.md)
 
 ### 웹 게임을 만들며 배우는 React에 Typescript 적용하기
 
