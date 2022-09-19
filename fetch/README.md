@@ -4,12 +4,35 @@
 
 - 데이터를 가져오기를 위한 React Hook
 - 캐시로부터 데이터를 반환한 후, fetch 요청을 하고, 최종적으로 최신화된 데이터를 가져옴
+- Lightweight Realtime Suspense Pagination...
+- stale-while-revalidate(HTTP 캐시 전략 중 하나)
+- 의도적으로 cache된 data를 return하고 fetch(revalidate)한 후 data를 update
+- 키가 같다면 요청이 자동으로 중복 제거, 캐시, 공유됨
+- 사용자 포커스나 네트워크 재연결 시 갱신됨
 
 #### SWR 기능
 
 - 빠르고 가볍고 재사용 가능한 데이터 가져오기
 - 내장된 캐시 및 요청 중복 제거
 - 실시간 경험
+
+#### SWR 특징
+
+- SWR
+  - Stale-While-Revalidate
+- 키
+  - 중복 제거/캐시/공유
+- Revalidate
+  - 다양한 옵션(포커스/네트워크/interval)
+- 전역 설정
+  - SWRConfig/Persistant cache
+
+#### Cache
+
+- Cache Provider
+- mutate
+- cache
+- Persistent Cache
 
 ### 2. React Query
 
