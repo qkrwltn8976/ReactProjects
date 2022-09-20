@@ -5,6 +5,7 @@ import Example from "./components/ReactQueryExample/Example";
 import { TestMocking } from "./components/TestMocking";
 import Profile from "./components/SWRExample/Profile";
 import Cache from "./components/SWRExample/Cache";
+import { Fetcher } from "./components/SWRExample/Fetcher";
 
 const queryClient = new QueryClient();
 
@@ -15,8 +16,9 @@ function App() {
         <Example />
       </QueryClientProvider> */}
       {/* <TestMocking /> */}
-      <Profile />
-      <Cache />
+      {/* <Profile /> */}
+      {/* <Cache /> */}
+      <Fetcher />
     </div>
   );
 }

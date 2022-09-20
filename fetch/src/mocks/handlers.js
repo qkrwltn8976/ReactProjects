@@ -3,11 +3,12 @@ import { rest } from "msw";
 export const handlers = [
   rest.get("http://localhost:3000/api/user/:userId", async (req, res, ctx) => {
     const { userId } = req.params;
-    return res(
-      ctx.json({
-        name: `JIMMY (${userId})`,
-      })
-    );
+    // return res(
+    //   ctx.json({
+    //     name: `JIMMY (${userId})`,
+    //   })
+    // );
+    return res(ctx.status(400));
   }),
   rest.get("/login", async (req, res, ctx) => {
     return res(
