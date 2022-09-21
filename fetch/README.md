@@ -23,9 +23,17 @@
 - 키
   - 중복 제거/캐시/공유
 - Revalidate
-  - 다양한 옵션(포커스/네트워크/interval)
+  - 다양한 옵션(포커스 / 네트워 / interval)
 - 전역 설정
-  - SWRConfig/Persistant cache
+  - SWRConfig / Persistant cache
+- 뮤테이션
+  - 데이터를 업데이트
+- 페이지네이션
+  - useSWRInfinite
+- 프리패칭
+  - <head> / mutate / 데이터 프리필
+- 성능
+  - 중복제거 / dedupingInterval / 비교
 
 #### Cache
 
@@ -33,6 +41,12 @@
 - mutate
 - cache
 - Persistent Cache
+
+#### Mutation
+
+- useSWRConfig로부터 꺼낼 수 있고
+- 현재 데이터 기반으로 Mutate도 가능
+- useSWR에서 직접 꺼내면 key 필요하지 않음
 
 ### 2. React Query
 
