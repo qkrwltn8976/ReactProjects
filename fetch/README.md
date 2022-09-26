@@ -54,6 +54,33 @@
 - 기존 상태 관리 라이브러리들은 fetching을 중요하게 생각하지 않음
 - client state와 server state는 다름
 - 다양한 고려 필요(Caching, multi request, update, out date, pagination)
+- Server State
+  - 기존 상태 관리 라이브러리에서 고려 X
+- 개념
+  - Query / Mutate / Query Invalidate
+- Devtools
+  - 자체 도구 존재
+- Examples
+  - 다양하게 참고 가능
+
+#### Query Keys
+
+- string / Array of many strings and nested objects
+- Array로 인식 / 객체 내부의 순서 무관 / Array의 순서는 유의미
+
+#### Query Functions
+
+- returns a promise (resolve the data | throw an error)
+- Query Keys이 params로 넘어옴
+- useQuery에 params 대신 객체로 넘길 수도 있음
+- useQuery({queryKey, queryFn, config})
+
+#### Parallel Queries
+
+- 기본이 병렬 수행
+- Suspense 사용하면제대로 동작안함 (대신 useQueries 사용)
+- Dynamic Parallel Queries
+  - useQueries([{queryKey, queryFn}])
 
 ## 모킹(Mocking)이란?
 
