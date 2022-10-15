@@ -103,7 +103,7 @@ interface Props {
   weight?: number;
   height?: number;
   baseExp?: number;
-  abilities?: Array<Ability>;
+  abilities: Array<Ability>;
 }
 const About: React.FC<Props> = ({
   isLoading,
@@ -173,7 +173,7 @@ const About: React.FC<Props> = ({
           </InfoItem>
         </InfoContainer>
       </InfoContainerWrapper>
-      <Abilities abilities={abilities} />
+      <Abilities color={color} abilities={abilities || []} />
     </Base>
   );
 };
