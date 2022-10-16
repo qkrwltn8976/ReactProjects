@@ -62,7 +62,13 @@ interface Props {
 
 const Evolution: React.FC<Props> = ({ url, color }) => {
   const { isSuccess, isError, isLoading, data } = useEvolutionChain(url);
-  const [evolutionChain, setEvolutionChain] = useState<Array<{ from: { name: string, url: string }, to: { name: string, url: string }, level: number }>>([]);
+  const [evolutionChain, setEvolutionChain] = useState<
+    Array<{
+      from: { name: string; url: string };
+      to: { name: string; url: string };
+      level: number;
+    }>
+  >([]);
 
   useEffect(() => {
     const makeEvolutionChain = (chain: Chain) => {
@@ -73,33 +79,36 @@ const Evolution: React.FC<Props> = ({ url, color }) => {
         const to = evolvesTo.species;
         const level = evolvesTo.evolution_details[0].min_level;
 
-        setEvolutionChain(prev => [...prev, { from, to, level }]);
+        setEvolutionChain((prev) => [...prev, { from, to, level }]);
 
-        makeEvolutionChain(chain.evolves_to[0])
+        makeEvolutionChain(chain.evolves_to[0]);
       }
-    }
-  });
+    };
+
+    isSuccess && data && makeEvolutionChain(data.data.chain);
+
+    return (): void => {
+      setEvolutionChain([]);
+    };
+  }, [isSuccess, data]);
 
   return (
     <Base>
       <Title color={mapColorToHex(color?.name)}>Evolution</Title>
 
-      {
-        evolutionChain?.length ? (
-          <List>
-            {
-              evolutionChain.map(({ from, to, level }) => (
-                <EvolutionStage level={level} from={from} to={to} />
-              ))
-            }
-          </List>
-        ) : (
-          <EmptyWrapper>
-            <Empty color={mapColorToHex(color?.name)}>This Pokemon does not evolve.</Empty>
-          </EmptyWrapper>
-        )
-      }
-
+      {evolutionChain?.length ? (
+        <List>
+          {evolutionChain.map(({ from, to, level }) => (
+            <EvolutionStage level={level} from={from} to={to} />
+          ))}
+        </List>
+      ) : (
+        <EmptyWrapper>
+          <Empty color={mapColorToHex(color?.name)}>
+            This Pokemon does not evolve.
+          </Empty>
+        </EmptyWrapper>
+      )}
     </Base>
   );
 };
